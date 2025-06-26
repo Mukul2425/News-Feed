@@ -1,0 +1,171 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="895.6,1116" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="500.8,767.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="581f562b-874b-4e75-8078-9e0d5ccbed11">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,518.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Headline'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Headline Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Publisher'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column2' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="10" ScopeIdentifier="581f562b-874b-4e75-8078-9e0d5ccbed11" Version="V4">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="google.com/search" CVScreenId="f5bf4c54-7834-4b37-a183-9ccdac2acfbc" CvTextArea="992, 870, 38, 17" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="994, 869, 36, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Next' parentid='pnnext' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Next' parentid='pnnext' type='' tag='SPAN' class='oeN89d' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Next' /&gt;" Guid="c05e0736-adb1-4001-b383-5b84e4f51f29" ScopeSelectorArgument="&lt;html app='chrome.exe' title='stock market news - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=stock+market+news&amp;sca_esv=970c2eedf69366cf&amp;tbm=nws&amp;ei=Oa5WaJTXEJTa2roP0-Pg8QI&amp;start=110&amp;sa=N&amp;ved=2ahUKEwjU18WfyoKOAxUUrVYBHdMxOC44ZBDw0wN6BAgHECs&amp;biw=1536&amp;bih=678&amp;dpr=1.25" DesignTimeRectangle="266, 320, 815, 2226" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='rso' tag='DIV' /&gt;" Guid="431c6d37-a596-41c9-9c9c-5fc6fc4380ca" InformativeScreenshot="37cf2e5fdda786d3f732fef7aa961d62.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='stock market news - Google Search' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[ExtractDataTable]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" sap:VirtualizedContainerService.HintSize="416,267.2" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&quot;C:\\Users\\91857\\Desktop\\news-feed-monitor\\News-Feed\\data\\raw_headlines.csv&quot;)]" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAATcSURBVFhHxZd5bJNlHMcZTNdjZbJANhBPMiMOs5GIRkKUQ3YwHOeYIoFxT6IyIUaNSPiHcSxqFGQoiAuwGFBgU45sXXeUsTlGO3RAWIIwyCJBjTsowrb2/ZjnrX3XPm83SsDwSb5/tP09v9+3z/30A/qFqERgHVBJ74jfRIyIldsHle6LIMoCTsuVQkC0EW3lfCEbePw2/zZURA6RS87fp4HpQJuc6S4QuUROuU5QA6LbgnPiOGzeAPMyIWk8TBaaCJMnwbw3UPI2o9TUyq380Q2JXFy41NPogEWzIG2ct3DyeEia4C2eNBmSUiA5DSU1Hc+UGbgXrUD59YycxUdAT/gXF+Ok7/b9G2Duc5A+1qsUYWACJInikyA5GVLSIHUaSup0PFMzcKfPVeXZsVvOJhA1tDnhb0A/4Qrfh+x4r4HZL9zewJSZgQZWfgCuG3JWgagVYEA/7iVvQ+5wWPMEZD8LC0ZD5hjvMKS+BEkvew2kJKOkiu6fhidtlmagj+I+1PngMxC4zq8Vwz4L5A2DLbGwJg4WJ8LSBHhzBliPgut6T7zLBVYbnqxleKbOCaW4QNRUDYhdK5CqOK+BXdE9BnKegV1rAgvLuFwohftDKe4jURgQW2cPf/8ItQawmeBIJByIgq+HwHfLA8LuEev0k+/iUmgwQb0Jys1QaoZDw6FTv0DuAZXCQCDnRvYYqDXBcROce0+O0qi/3Iua4VSzosnR7OFqqyI3VydgAEqDAeW0CRrM4DSDwwztdjlMIzG3F61XdNpuD8lABIrogdMW1YDSEAmdzXKYhq5wMAkDuYRmwON8QDMgiqvqvCyHaeiK9aH8IB2pN+AYgOJ8ELfTSKfTyD9OA10dVXKYhkickOshIdf9nzwk5op/7NOdGmgcgdsRTtupcFyOCK7Uh/PnlVVymEa+XSHf7vGT+KyQ+mXoBgKWYfelLG6d6q8auFYfrhpwOgbT7W71D+uTjpsw7hN9L4jVIaEuw4CNqKv1EC0nw2isC+OXuv5Yf+7PNzURFJ3P9A/rk89qXDy96QZxeR3Eb7zFqA1dxG/slMME6kak24qdDY9RVNuPY7VhFNaEsf6EkdXV0exsyuF6d4ccHsC2My0M2XaeoVsuEbP1N5789C9GbrrJh0e65FCBuhXrDqP29grVQEFNGJ+fGEBO9UDm22N5tWoEybUz+f5qCW3dLv8mFP9+gVfKj2IoPMDAnSeJ3t6oGYjLa6elTbcEtcNISHccV1zMYW11BCuPRzLd/jATq55iTOVoHrWlEGNLJ9qWgcW6kKHlKzGWvIXh8EcYDmzF8EM+xj2Hify2gugdJ4nZeoG1VUHnT8BxrJuMgr1Ny5hpj+XFqnier0wgrnw8sbbZDLZlMKhsHlFlCzGXZhNZuhzzsVUYD+VhLNqEcd8eLAU2TLtLGHvwrJxWoLuQCAW9kn3R9I5qIKFiTI+Bstc0AxbrEs2A6aePNQPGwoPMqWigrdMtp+z1SiYU9FJa1+pgXM3rDLOlMahsLg+pxRcQVZaFpXQJFutiLCUriDy6GnPxemKKCthyvklO46PXS6lPuvng48gfdWSf/YpR1e8SVTZfNTHQupAoaxaPlOeQ6Shgb0s9bV235KY+bnst9+8J3XDcBXf0MPHpvj7N/HXfHqey/pfn+b9CSGaGdBXBYQAAAABJRU5ErkJggg==" InformativeScreenshot="afbede98510c9d0beb5a2ad354cb97ec.jpg" Selector="&lt;html app='chrome.exe' title='stock market news - Google Search' /&gt;" Url="https://www.google.com/search?q=stock+market+news&amp;tbm=nws" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="500.8,325.6" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="C:\Users\91857\AppData\Local\Programs\Python\Python311\python.exe" TargetPlatform="x64" Version="Python &gt;=3.10">
+      <p:PythonScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,265.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="p:PythonObject" Name="pyScript" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[pyScript]" ScriptFile="C:\Users\91857\Desktop\news-feed-monitor\News-Feed\ai_pipeline\process_headlines.py" />
+            <p:InvokeMethod Result="{x:Null}" DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Name="process_headlines" Parameters="[New Object() {&quot;C:\Users\91857\Desktop\news-feed-monitor\News-Feed\data\raw_headlines.csv&quot;, &quot;C:\Users\91857\Desktop\news-feed-monitor\News-Feed\data\processed_output.csv&quot;}]" />
+          </Sequence>
+        </ActivityAction>
+      </p:PythonScope.Body>
+    </p:PythonScope>
+  </Sequence>
+</Activity>
